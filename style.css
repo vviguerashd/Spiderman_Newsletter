@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: rgb(223, 223, 223);
+}
+img{
+    width:150px;
+}
+
+.newsletter{
+    width: 700px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    padding: 50px 30px;
+    margin: 0 auto;
+}
+
+.newsletter .info1{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 7px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.newsletter .info1 .left-part{
+    width: 48%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    text-align: center;
+}
+.newsletter .info1 .right-part{
+    width: 48%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
+    text-align: center;
+}
+
+.newsletter .info1 p{
+    text-transform: uppercase;
+    margin: 5px 10px;
+}
+
+.newsletter .left-part div{
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+.newsletter .right-part div{
+    width: 100%;
+    color: white;
+    background-color: black;
+    text-transform: uppercase;
+    font-size: 80%;
+}
+.newsletter-name-background{
+    height: 130px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    border-top: 5px  solid black;
+    border-bottom: 5px  solid black;
+    margin-bottom: 7px;
+
+}
+
+.newsletter-name{
+    width: 100%;
+    height: 120px;
+    background-color: #ae111a;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 50px;
+}
+.newsletter-name .logo-container{
+    -webkit-transform: skew(120deg);
+    -moz-transform: skew(120deg);
+    -ms-transform: skew(120deg);
+    -o-transform: skew(120deg);
+    transform: skew(-12deg);
+    background-color: black;
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-name div img{
+    width:140px ;
+    padding-right: 7px;
+}
+
+.newsletter-name p{
+    font-size: 60px;
+    color: white;
+
+    text-shadow: 4px 4px #000000;    
+}
+
+.info2{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+
+.info2 span{
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.info2 span:first-child{
+    text-transform: uppercase;
+}
+
+.info2 span:last-child{
+    font-size: 80%;
+}
+
+.main{
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+}
+.main .main-text{
+    width: 70%;
+    height: auto;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.main .main-text p{
+    font-size: 170px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+
+}
+.main .main-image{
+    width: 50%;
+    position: relative;
+}
+.main-image .image-1{
+    width: 600px;
+    position: absolute;
+    right: 10px;
+}
+.main-image .image-2{
+    height: 100%;
+    width: 100%;
+}
+
+.info3{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background-color: #ae111a;
+    height: 30px;
+}
+.info3 span{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding-top: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.info3 span:last-child{
+    text-transform: uppercase;
+}
+.newsletter .content-articles{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.content-articles .pepe{
+    display: flex;
+    gap: 10px;
+}
+
+.content-articles div article{
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+    text-align:justify;
+}
+
+.content-articles article span{
+    font-size: 1.2em;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 0 4px ;
+}
+.content-articles article img{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.content-articles .info4{
+    background-color: white;
+    display: none;
+    flex-direction: column;
+    margin-bottom: 7px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.content-articles .info4 .up-part{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    text-align: center;
+}
+.content-articles .info4 .down-part{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid black;
+    text-align: center;
+}
+
+.content-articles .info4 p{
+    color: #000000;
+}
+
+.content-articles .info4 div{
+    text-transform: uppercase;
+    background-color: #000000;
+    color: white;
+}
+
+@media only screen and (min-width: 700px){
+    body .newsletter{
+        width: 100%;
+        
+    }
+    body .newsletter-name-background{
+        position: sticky;
+        top: 0;
+        z-index: 2;
+    
+    }
+    
+    .newsletter .info1{
+        display:none;
+    }
+    
+    body .content-articles{
+        width: 74%;
+        margin: 10px auto;
+        flex-direction: column;
+
+    }
+
+    .pepe article{
+        display: flex;
+    }
+    .pepe article img{
+        order: -1;
+        height: 300px;
+    }
+
+    .pepe{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .newsletter .content-articles span{
+        font-size: 2rem;
+        text-align:start;
+    }
+    
+    body .content-articles article{
+        width: 100%;
+        margin-top: 10px;
+    }
+    body .content-articles img{
+        width: 45%;
+        height: auto;
+    }
+
+    body .content-articles p{
+        font-size: 1.2rem;
+    }
+    
+    .content-articles .info4{
+        display: flex;
+        gap: 10px;
+    }
+    }
+
+@media only screen and  (min-width: 1015px){
+
+body .newsletter{
+    width: 1000px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+    padding: 20px 30px;
+    margin: 0 auto;
+}
+}
+    
+
